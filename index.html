@@ -4,29 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - André Muniz</title>
-    <meta name="description" content="A Home for WDD231 course">
-    <meta name="author" content="André Muniz">
-
     <meta name="google-adsense-account" content="ca-pub-4067549121212932">
+    <title>Course Scheduler</title>
+    <link rel="stylesheet" href="styles.css">
+
 
 </head>
 
 <body>
-    <header>
-        <div class="title">
-            <h1>
-                André F. Muniz
-            </h1>
+    <h1>Course Scheduler</h1>
+
+    <!-- Formulário para entrada da URL -->
+    <form id="urlForm">
+        <label for="urlInput">Insira a URL do currículo:</label>
+        <input type="text" id="urlInput" placeholder="Digite a URL aqui" required>
+        <button type="submit">Carregar Currículo</button>
+    </form>
+
+    <!-- Espaço reservado para anúncio antes do conteúdo -->
+    <div class="ad-section">
+        <div class="ad-placeholder">
+            <p>Espaço reservado para anúncio por enquanto pode nos apoiar doando pelo pix ao lado.</p>
         </div>
-    </header>
-    <main>
-        <section>
-            <h2>Hello World</h2>
-        </section>
-    </main>
+        <a href="http://pixgg.com/Zinum" target="_blank" rel="noopener noreferrer">
+            <img src="./images/pixgg-qrcode.png" alt="Imagem ao lado do anúncio" class="ad-image">
+        </a>
+    </div>
 
+    <div class="periods-container" id="periods"></div>
 
+    <!-- Espaço reservado para anúncio após o conteúdo -->
+    <div class="ad-section">
+        <div class="ad-placeholder">
+            <p>Espaço reservado para anúncio por enquanto pode nos apoiar doando pelo pix ao lado.</p>
+        </div>
+        <a href="http://pixgg.com/Zinum" target="_blank" rel="noopener noreferrer">
+            <img src="./images/pixgg-qrcode.png" alt="Imagem ao lado do anúncio" class="ad-image">
+        </a>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

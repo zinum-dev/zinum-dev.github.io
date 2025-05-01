@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+.periods-container {
+    display: flex;
+    gap: 10px;
+    /* Aumenta o espaçamento entre os períodos */
+    flex-wrap: wrap;
+    /* Permite que os períodos quebrem linha se necessário */
+    max-height: 700px;
+    /* Aumenta a altura máxima do container */
+    overflow-y: auto;
+    /* Adiciona scroll vertical se necessário */
+    padding: 10px;
+    /* Adiciona espaçamento interno */
+    border: 1px solid #ccc;
+    /* Adiciona uma borda para destacar o container */
+    border-radius: 8px;
+    /* Bordas arredondadas */
+    background-color: #f9f9f9;
+    /* Fundo claro */
+}
+
+.period {
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    overflow-wrap: auto;
+    min-width: 200px;
+    /* Aumenta a altura máxima do container */
+
+    /* Adiciona scroll vertical */
+
+}
+
+.period h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 5px 0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.card p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Cor do card selecionado */
+.card.selected {
+    background-color: #007bff;
+    /* Azul forte */
+    color: white;
+    border-color: #0056b3;
+}
+
+/* Cor dos pré-requisitos */
+.card.prerequisite {
+    background-color: #ffcccb;
+    /* Vermelho claro */
+    border-color: #ff0000;
+}
+
+/* Cor dos dependentes */
+.card.dependent {
+    background-color: #90ee90;
+    /* Verde claro */
+    border-color: #008000;
+}
+
+.ad-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.ad-placeholder {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    border: 2px dashed #ccc;
+    color: #666;
+    font-size: 14px;
+}
+
+.ad-image {
+    width: auto;
+    height: 150px;
+    margin-left: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
