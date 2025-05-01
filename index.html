@@ -12,13 +12,17 @@
 </head>
 
 <body>
-    <h1>Course Scheduler</h1>
+    <h1>Course Scheduler UFRJ</h1>
 
     <!-- Formulário para entrada da URL -->
-    <form id="urlForm">
+    <form id="urlForm" class="styled-form">
         <label for="urlInput">Insira a URL do currículo:</label>
         <input type="text" id="urlInput" placeholder="Digite a URL aqui" required>
         <button type="submit">Carregar Currículo</button>
+        <button type="button"
+            onclick="window.open('https://siga.ufrj.br/sira/repositorio-curriculo/ListaCursos.html', '_blank')">
+            Cursos
+        </button>
     </form>
 
     <!-- Espaço reservado para anúncio antes do conteúdo -->
