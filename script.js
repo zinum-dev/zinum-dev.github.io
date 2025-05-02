@@ -16,7 +16,7 @@ urlForm.addEventListener('submit', (event) => {
     periodsContainer.innerHTML = '';
 
     // Faz a chamada para a API com a URL fornecida
-    fetch(`http://localhost:3000/api/curriculum?url=${encodeURIComponent(url)}`)
+    fetch(`https://course-scheduler-kappa.vercel.app/api/curriculum?url=${encodeURIComponent(url)}`)
         .then(response => response.json())
         .then(data => {
             const subjectsByPeriod = {};
