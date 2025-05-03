@@ -3,10 +3,22 @@ const periodsContainer = document.getElementById('periods');
 const urlForm = document.getElementById('urlForm');
 const urlInput = document.getElementById('urlInput');
 
+// Verifica se o usuário já ativou o modo escuro anteriormente
+const isDarkMode = localStorage.getItem('darkMode') === 'true';
+
+// Aplica o modo escuro se necessário
+if (isDarkMode) {
+    document.body.classList.add('dark-mode');
+}
+
+// Alterna o modo escuro ao clicar no botão
 const toggleButton = document.getElementById('darkModeToggle');
 toggleButton.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
+    // Salva a preferência do usuário
+    localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
 });
+
 
 urlForm.addEventListener('submit', (event) => {
     event.preventDefault(); // Impede o envio padrão do formulário
@@ -110,5 +122,6 @@ urlForm.addEventListener('submit', (event) => {
         })
         .catch(error => console.error('Error fetching subjects:', error));
 });
+
 
 
