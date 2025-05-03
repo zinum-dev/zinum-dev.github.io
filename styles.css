@@ -7,11 +7,24 @@ form {
     margin-bottom: 20px;
 }
 
-/* Estilo para o botão de alternar modo */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    /* Cor de fundo opcional */
+    border-bottom: 1px solid #ccc;
+    /* Linha opcional para separar o cabeçalho */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
 .dark-mode-toggle {
-    position: fixed;
-    top: 10px;
-    right: 10px;
     padding: 10px 15px;
     font-size: 14px;
     background-color: #f0f0f0;
@@ -24,6 +37,27 @@ form {
 
 .dark-mode-toggle:hover {
     background-color: #ddd;
+}
+
+/* Modo escuro para o header */
+body.dark-mode header {
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #333;
+}
+
+body.dark-mode header h1 {
+    color: #fff;
+}
+
+body.dark-mode .dark-mode-toggle {
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #666;
+}
+
+body.dark-mode .dark-mode-toggle:hover {
+    background-color: #555;
+    border-color: #777;
 }
 
 /* Estilos para o modo escuro */
