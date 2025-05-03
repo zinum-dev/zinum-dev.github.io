@@ -3,6 +3,11 @@ const periodsContainer = document.getElementById('periods');
 const urlForm = document.getElementById('urlForm');
 const urlInput = document.getElementById('urlInput');
 
+const toggleButton = document.getElementById('darkModeToggle');
+toggleButton.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+});
+
 urlForm.addEventListener('submit', (event) => {
     event.preventDefault(); // Impede o envio padrão do formulário
 
@@ -105,3 +110,5 @@ urlForm.addEventListener('submit', (event) => {
         })
         .catch(error => console.error('Error fetching subjects:', error));
 });
+
+

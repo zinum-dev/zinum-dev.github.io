@@ -7,6 +7,59 @@ form {
     margin-bottom: 20px;
 }
 
+/* Estilo para o botão de alternar modo */
+.dark-mode-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode-toggle:hover {
+    background-color: #ddd;
+}
+
+/* Estilos para o modo escuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode .styled-form {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+}
+
+body.dark-mode input[type="text"] {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+body.dark-mode button {
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #666;
+}
+
+body.dark-mode .styled-form label {
+    color: #fff;
+    /* Ajusta a cor do texto no modo escuro */
+}
+
+body.dark-mode .styled-form input[type="text"] {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+}
+
 
 .styled-form {
     display: flex;
@@ -73,21 +126,19 @@ form {
 .periods-container {
     display: flex;
     gap: 10px;
-    /* Aumenta o espaçamento entre os períodos */
     flex-wrap: wrap;
-    /* Permite que os períodos quebrem linha se necessário */
     max-height: 700px;
-    /* Aumenta a altura máxima do container */
     overflow-y: auto;
-    /* Adiciona scroll vertical se necessário */
     padding: 10px;
-    /* Adiciona espaçamento interno */
     border: 1px solid #ccc;
-    /* Adiciona uma borda para destacar o container */
     border-radius: 8px;
-    /* Bordas arredondadas */
     background-color: #f9f9f9;
-    /* Fundo claro */
+}
+
+/* Modo escuro para o container de períodos */
+body.dark-mode .periods-container {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
 }
 
 .period {
@@ -98,11 +149,9 @@ form {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     overflow-wrap: auto;
     min-width: 200px;
-    /* Aumenta a altura máxima do container */
-
-    /* Adiciona scroll vertical */
-
 }
+
+
 
 .period h2 {
     margin-bottom: 10px;
@@ -137,6 +186,11 @@ form {
     border-color: #0056b3;
 }
 
+body.dark-mode .card.selected {
+    background-color: #0056b3;
+    border-color: #003f7f;
+}
+
 /* Cor dos pré-requisitos */
 .card.prerequisite {
     background-color: #ffcccb;
@@ -144,11 +198,21 @@ form {
     border-color: #ff0000;
 }
 
+body.dark-mode .card.prerequisite {
+    background-color: #ff9999;
+    border-color: #cc0000;
+}
+
 /* Cor dos dependentes */
 .card.dependent {
     background-color: #90ee90;
     /* Verde claro */
     border-color: #008000;
+}
+
+body.dark-mode .card.dependent {
+    background-color: #66cc66;
+    border-color: #006600;
 }
 
 .ad-section {
@@ -186,6 +250,23 @@ form {
     margin-left: 10px;
     border-radius: 8px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Modo escuro para a seção de anúncios */
+body.dark-mode .ad-section {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    color: #fff;
+}
+
+body.dark-mode .ad-placeholder {
+    color: #aaa;
+    border-color: #555;
+}
+
+/* Modo escuro para imagens de anúncios */
+body.dark-mode .ad-image {
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.1);
 }
 
 
